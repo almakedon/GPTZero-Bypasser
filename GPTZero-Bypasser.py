@@ -1,29 +1,35 @@
 import random
 
-def replace_letters(file_buffer):
-    # Changes all AEOaeo letters with the cyrillic varients.
-    file_buffer = file_buffer.replace('a', '𝚊')
-    file_buffer = file_buffer.replace('q', '𝚚')
-    file_buffer = file_buffer.replace('u', '𝚞')
-    file_buffer = file_buffer.replace('n', '𝚗')
-    file_buffer = file_buffer.replace('t', '𝚝')
-    file_buffer = file_buffer.replace('m', '𝚖')
-    file_buffer = file_buffer.replace('c', '𝚌')
-    file_buffer = file_buffer.replace('o', '𝚘')
-    file_buffer = file_buffer.replace('l', '𝚕 ')
-    return file_buffer
+CYRILLIC_MAP = {
+    'a': '𝚊',
+    'q': '𝚚',
+    'u': '𝚞',
+    'n': '𝚗',
+    't': '𝚝',
+    'm': '𝚖',
+    'c': '𝚌',
+    'o': '𝚘',
+    'l': '𝚕 '
+}
 
-def insert_zwj(file_buffer):
+ZWJ_PROBABILITY = 0.2
+
+def replace_letters(input_text):
     output = ""
-    zwj = "\u200D" # Zero Width Joiner unicode character
-    for char in file_buffer:
+    for char in input_text:
+        output += CYRILLIC_MAP.get(char, char)
+    return output
+
+def insert_zwj(input_text):
+    output = ""
+    zwj = "\u200D"
+    for char in input_text:
         output += char
-        # Randomly insert zero width joiner
-        if random.random() < 0.2: # Lower number = Less ZWJ
+        if random.random() < ZWJ_PROBABILITY:
             output += zwj
     return output
 
-
-print(insert_zwj(replace_letters(input())))
-
-input()
+input_text = input("Enter the text: ")
+cyrillic_text = replace_letters(input_text)
+output_text = insert_zwj(cyrillic_text)
+print("Output text: ", output_text)
