@@ -16,13 +16,3 @@ GPTZero thinks:
 After using the script, GPTZero thinks:
 
 `Your text is likely to be written entirely by a human.`
-
-
-
-## Usage
-
-You can F5-Run it in idle if you want, but if you just run it normally, an empty terminal opens. Copy-paste your text into the terminal and press Enter, then copy the new text from the terminal.
-
-**This removes all formatting. Sorry! :)**
-
-Made in Python 3.8
