@@ -16,3 +16,7 @@ GPTZero thinks:
 After using the script, GPTZero thinks:
 
 `Your text is likely to be written entirely by a human.`
+
+## Usage:
+
+Website: https://gonzoknows.com/posts/Bypass-GPTZero-Using-Different-Fonts/
