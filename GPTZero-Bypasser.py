@@ -2,7 +2,7 @@ import random
 
 def replace_letters(file_buffer):
     # Changes all AEOaeo letters with the cyrillic varients.
-    file_buffer = file_buffer.replace(' ', '​')
+    file_buffer = file_buffer.replace(' ', ' ')
     return file_buffer
 
 def insert_zwj(file_buffer):
