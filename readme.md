@@ -1,6 +1,6 @@
 # GPTZero-Bypasser
 
-Takes any AI-written text that would be detected by GPTZero and makes it magically 'not AI written'.
+Takes any AI-written text that would be detected by [GPTZero](https://gptzero.me/) and makes it magically 'not AI written'.
 
 ## Demo
 
@@ -17,12 +17,6 @@ After using the script, GPTZero thinks:
 
 `Your text is likely to be written entirely by a human.`
 
+## Usage:
 
-
-## Usage
-
-You can F5-Run it in idle if you want, but if you just run it normally, an empty terminal opens. Copy-paste your text into the terminal and press Enter, then copy the new text from the terminal.
-
-**This removes all formatting. Sorry! :)**
-
-Made in Python 3.8
+Website: https://gonzoknows.com/posts/Bypass-GPTZero-Using-Different-Fonts/
