@@ -1,6 +1,6 @@
 # GPTZero-Bypasser
 
-Takes any AI-written text that would be detected by GPTZero and makes it magically 'not AI written'.
+Takes any AI-written text that would be detected by [GPTZero](https://gptzero.me/) and makes it magically 'not AI written'.
 
 ## Demo
 
